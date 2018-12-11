@@ -1,0 +1,159 @@
+/* Set height of body and the document to 100% to enable "full page tabs" */
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: Arial;
+  background-color: #c53737
+}
+
+/* Style tab links */
+.tablink {
+  background-color: #555; 
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 20px;
+  width: 8em;
+  position: relative;
+  right: -255px;
+  top: -51px;
+  clip-path: polygon(85% 0, 100% 38%, 100% 100%, 0 100%, 0 0);
+}
+
+
+.tablink:hover {
+  background-color: #777;
+}
+
+/* Style the tab content (and add height:100% for full page content) */
+.tabcontent {
+  border: #000000 solid 1px; /*1*/
+  color: white;
+  display: none;
+  width: 900px;/*1*/
+  margin-left: auto;/*1*/
+  margin-right: auto;/*1*/
+  padding: 100px 20px;
+  height: 100%;
+  margin-top: 10ex;/*1*/
+}
+  #Administration {background-color: #a3a3a3;}
+  #Formular {background-color: #b6a99e;}
+
+  /*Style search bar in Administration tab*/
+  .searchBar {
+    margin-right:auto;
+    margin-left:auto;
+    margin-bottom: 60px;
+    width: 400px;
+}
+
+.formStyle {
+  width: 550px;
+  margin: 0 auto;
+  align-self: auto;
+}
+
+.addButton {
+  display: none;
+  float: right;
+  position: relative;
+  /*margin-right: 20%;*/
+  top: -36px;
+  right: 200px;
+}
+
+
+
+/*Format Radio buttons position*/
+.rBl {
+  width: 10em;
+  position: relative;
+  top: 5px;
+  left: 271px;
+
+}
+/*Save button style*/
+.saveButton {
+  display: none;
+  float: right;
+  position: relative;
+  /*position: relative;*/
+  margin-right: 20%;
+  /*top: 100px;*/
+  right: -64px;
+}
+ /*Set style for search bar in tab Formular*/
+.searchBar2 {
+  margin-right:auto;
+  margin-left:auto;
+  margin-bottom: 60px;
+  width: 500px;
+}
+
+.saveButton2 {
+  /*display: none;*/
+  float: right;
+
+}
+
+.label {
+  width: 200px;
+  display: inline-block;
+  text-align: right;
+}
+
+ #version {
+  width: 35px;
+ }
+ .parent2 {
+   align-content: center;
+   margin: 0 auto;
+ }
+
+ form {
+  /* Just to center the form on the page */
+  margin: 0 auto;
+  width: 600px;
+  /* To see the outline of the form */
+  padding: 1em;
+}
+
+form div + div {
+  margin-top: 1em;
+}
+
+label {
+  /* To make sure that all labels have the same size and are properly aligned */
+  display: inline-block;
+  min-width: 12em;
+  text-align: left;
+}
+
+
+input:focus, textarea:focus {
+  /* To give a little highlight on active elements */
+  border-color: #000;
+}
+
+textarea {
+  /* To properly align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* To give enough room to type some text */
+  height: 5em;
+}
+
+/*style for delete button*/
+.delButton {
+  display: none;
+  float: right;
+  position: relative;
+  /*margin-right: 20%;*/
+  top: -36px;
+  right: 100px;
+}

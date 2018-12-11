@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="StyleSheet" href="style.css">
+</head>
+<body>
+  <!--Create tabs using button tag and set default tab:-->
+  <button class="tablink" onclick="openPage('Administration', this, '#a3a3a3')" id="defaultOpen">Administration</button>
+  <button class="tablink" onclick="openPage('Formular', this, '#b6a99e')" >Formular</button>
+
+  <div id="Administration" class="tabcontent">
+
+      <!--In tab Administration added "search" option:-->
+    <div class="searchBar">
+      Formular name: <input id="request" type="text" placeholder="">
+      <button type="submit" onclick="myFind()">Search</button>
+    </div>
+    <form id="parent">
+      
+    </form>
+    <div>
+        <button id="add" class="addButton" onclick="addRow()" >Add</button>
+        <button id="delete" class="delButton" onclick="removeRow()">Del</button>
+    </div>
+    <div>
+      <button id="save" class="saveButton" onclick="saveForm()">Save</button>
+    </div>
+  </div>
+
+  <div id="Formular" class="tabcontent">
+    <form class="searchBar2"  action="JavaScript:myFindLoad()">
+      Formular name: <input id="loadRequest" type="text" placeholder="" required> &nbsp;
+      Version: <input id="version" type="number" min="1" required > &nbsp;
+      <input type="submit" value="Load">
+    </form>
+    <div id="parent2" class="formStyle">
+    </div>
+    
+        
+  </div>
+  <script src="function2.js"></script>
+</body>
+</html>
+
